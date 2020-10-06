@@ -1,0 +1,3 @@
+[submodule "my-blog-sample"]
+	path = my-blog-sample
+	url = https://github.com/Magicianred/my-blog-sample
