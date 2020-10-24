@@ -53,7 +53,7 @@ category.Posts = connection.Query<Post>("SELECT Id, Title, Text FROM Posts WHERE
 #### Progetto Web  
 - Aggiungi la action *Tags* nel controller *HomeController*, usa la action *Index* come riferimento  
 - Aggiungi la action *Tag({id})* nel controller *HomeController*, usa la action *Post({id})* come riferimento  
-- Aggiungi la view *Tags* nella cartella *Views/Home*, usa la view *Index* come un riferimento  
-- Aggiungi la view *Tag* nella cartella *Views/Home*, usa la view *Post* come un riferimento, ma ricorda che dovrai visualizzare anche la lista dei post contenuti nel tag, per questo vedi il *foreach* nella view *Index*  
+- Aggiungi la view *Tags* nella cartella *Views/Home*, usa la view *Index* come come una traccia, copia il codice e adattalo  
+- Aggiungi la view *Tag* nella cartella *Views/Home*, usa la view *Post* come come una traccia, copia il codice e adattalo, ma ricorda che dovrai visualizzare anche la lista dei post contenuti nel tag, per questo vedi il *foreach* nella view *Index*  
 
 [Ritorna alla pagina principale](../README_IT.md)  
