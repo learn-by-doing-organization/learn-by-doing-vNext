@@ -9,6 +9,9 @@ Giacomo non si è però scoraggiato e con una delle sue idee ha trovato il modo 
 
 Il codice del progetto è molto strutturato, ma ha ancora poche funzionalità, è predisposto per i test, ma quelli attuali non hanno molto senso, ma sono in ogni caso un'ottima base per crearne di nuovi.  
 
+## Istruzioni  
+Di seguito troverai elencate le funzionalità che si vorranno vedere implementate nel progetto. Verrà presentata una descrizione *funzionale* che è quello che il *cliente*, nel nostro caso Tommaso e Giacomo, vogliono avere sul loro blog. Se hai una certa esperienza, o vuoi metterti in gioco, questa descrizione potrebbe già bastarti per iniziare l'attività. Al contrario se hai bisogno di un aiuto per capire cosa fare clicca sul collegamento *Specifiche implementative* e troverai dei dettagli tecnici su come procedere.  
+
 ## Funzionalità da implementare  
 Le funzionalità da implementare porteranno al rilascio della versione 2.0 del progetto.  
 
@@ -37,7 +40,7 @@ Tommaso suggerisce di inserire la paginazione alla action *Index* del controller
 [Specifiche implementative](Features/PostPagination_IT.md)  
 
 ### Correggere il test [backend, testing]
-Tommaso si è reso conto di aver modificato la UI del progetto Web, ma non aver sistemato il test *should_retrieve_all_posts* del progetto *Magicianred.LearnByDoing.MyBlog.Web.Tests.Integration* che ho riporta un errore.  
+Tommaso si è reso conto di aver modificato la UI del progetto Web, ma di non aver sistemato il test *should_retrieve_all_posts* del progetto *Magicianred.LearnByDoing.MyBlog.Web.Tests.Integration* che ora riporta un errore.  
 
 [Specifiche implementative](Features/ErrorInTest_IT.md)  
 

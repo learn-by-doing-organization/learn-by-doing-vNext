@@ -1,4 +1,5 @@
 # My Blog Sample  
+([English translate](PostCategories.md))  
 
 ## Aggiungere le categorie ai Post [database, backend, frontend]
 Giacomo vuole creare delle categorie logiche per raccogliere i Post, vorrebbe che i Post siano collegati ad una categoria, per ora non gli importa di poterli collegare a più di una categoria, ne basta una sola.  
@@ -55,3 +56,4 @@ category.Posts = connection.Query<Post>("SELECT Id, Title, Text FROM Posts WHERE
 - Aggiungi la view *Categories* nella cartella *Views/Home*, usa la view *Index* come un riferimento  
 - Aggiungi la view *Category* nella cartella *Views/Home*, usa la view *Post* come un riferimento, ma ricorda che dovrai visualizzare anche la lista dei post contenuti nella categoria, per questo vedi il *foreach* nella view *Index*  
 
+[Ritorna alla pagina principale](../README_IT.md)  
