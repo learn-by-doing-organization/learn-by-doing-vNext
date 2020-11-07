@@ -13,7 +13,7 @@ Tom suggests inserting a new table for the categories and adding a reference to 
      - * Id * [int, primary key],  
      - * Name * [string],  
      - * Description * [string],  
-     - * CreateDate * [datetime])  
+     - * CreateDate * [datetime]  
 - Create new column in *Posts* table named *CategoryId*, which will be foreign key on category table id.  
 
 #### Backend  
@@ -79,5 +79,6 @@ services.AddScoped<ICategoriesService, CategoriesService>();
 - Add a test like *HomeControllerTest.should_retrieve_post_by_id* to verify that the category page responds correctly when requesting an existing id  
 - Add a test like *HomeControllerTest.should_retrieve_no_one_post* to verify that the category page responds correctly when requesting a non-existent id  
 
+[See the repository with the implementation (!!! contains spoilers)](https://github.com/Magicianred/my-blog-sample/tree/pathFromV1toV2/step01/add-category-to-posts)  
 
 [Return to main page](../README.md)  

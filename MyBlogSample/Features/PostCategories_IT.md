@@ -1,4 +1,4 @@
-# My Blog Sample  
+# My Blog Sample - Specifiche implementative  
 ([English translate](PostCategories.md))  
 
 ## Aggiungere le categorie ai Post [database, backend, frontend]
@@ -13,7 +13,7 @@ Tommaso suggerisce di inserire una nuova tabella per le categorie e di aggiunger
     - *Id* [int, chiave primaria],  
     - *Name* [stringa],  
     - *Description* [stringa],  
-    - *CreateDate* [datetime])  
+    - *CreateDate* [datetime]  
 - Crea nuova colonna nella tabella *Posts* chiamata *CategoryId*, che sarà chiave esterna sull'id della tabella delle categorie.  
 
 #### Backend  
@@ -38,7 +38,7 @@ var mockPosts = PostsHelper.GetDefaultMockData();
 db.Insert<Post>(mockPosts);
 ```  
 
-###### Fai attenzione, nella classe *CategoriesRepositoryTest.cs* usa la class *Category* che hai creato in questo progetto, non quella del progetto *Domain*. Questa è un'eccezione dovuta al fatto che il database InMemory non riconosce correttamente il nome della tabella, con questo *hack* tu puoi passare il nome della tabella attraverso l'attributo della classe *Post*, o nella tua implementazione *Categoria* (Tommaso sta ancora lavorando per risolvere correttamente questa casistica).  
+###### Fai attenzione, nella classe *CategoriesRepositoryTest.cs* usa la classe *Category* che hai creato in questo progetto, non quella del progetto *Domain*. Questa è un'eccezione dovuta al fatto che il database InMemory non riconosce correttamente il nome della tabella, con questo *hack* tu puoi passare il nome della tabella attraverso l'attributo della classe *Category*, o nella tua implementazione *Category* (Tommaso sta ancora lavorando per risolvere correttamente questa casistica).  
 ```csharp
 [Alias("Posts")]
 ```
@@ -79,4 +79,7 @@ services.AddScoped<ICategoriesService, CategoriesService>();
 - Aggiungi un test come *HomeControllerTest.should_retrieve_post_by_id* per verificare che la pagina della categoria risponda correttamente quando si richiede un id esistente  
 - Aggiungi un test come *HomeControllerTest.should_retrieve_no_one_post* per verificare che la pagina della categoria risponda correttamente quando si richiede un id non esistente  
 
+[Vedi il repository con l'implementazione (!!!contiene spoiler)](https://github.com/Magicianred/my-blog-sample/tree/pathFromV1toV2/step01/add-category-to-posts)  
+
 [Ritorna alla pagina principale](../README_IT.md)  
+
