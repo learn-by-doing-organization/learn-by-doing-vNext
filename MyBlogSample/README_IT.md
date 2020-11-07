@@ -21,20 +21,27 @@ Tommaso suggerisce di inserire una nuova tabella per le categorie e di aggiunger
 
 [Specifiche implementative](Features/PostCategories_IT.md)  
 
-### Aggiungere i tag ai Post [database, backend, frontend]
+[Obbiettivi di apprendimento](LearningGoals/PostCategories_IT.md)  
+
+### Aggiungere i tag ai Post [database, backend, frontend]  
 Giacomo ha saputo da un amico che lavora nel SEO che i tag sono molto comodi, quindi vuole averli anche lui nel suo blog.  
+
 Tommaso suggerisce di creare una nuova tabella per i Tag e di creare una tabella di relazione con la tabella dei Post.  
 
 [Specifiche implementative](Features/PostTags_IT.md)  
 
+[Obbiettivi di apprendimento](LearningGoals/PostTags_IT.md)  
+
 ### Aggiungere l'autore ai Post [database, backend, frontend]  
 Giacomo vorrebbe coinvoltere altri amici per redarre i post del blog, per questo ha bisogno di indicare nei post chi è l'autore. Al momento non pensa sia necessario creare l'entità Autori, basterà solo indicare l'autore.  
+
 Tommaso suggerisce di aggiungere un campo Autore nella tabella dei Post.  
 
 [Specifiche implementative](Features/PostAuthor_IT.md)  
 
 ### Aggiungere la paginazione alla lista dei Post [backend, frontend]  
 Giacomo sa già che il blog sarà ricco di post e non vuole che siano tutti visibili nella prima pagina.  
+
 Tommaso suggerisce di inserire la paginazione alla action *Index* del controller *HomeController* che permetta di visualizzare solo 3 post alla volta.  
 
 [Specifiche implementative](Features/PostPagination_IT.md)  

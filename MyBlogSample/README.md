@@ -24,11 +24,16 @@ Tom suggests inserting a new table for the categories and adding a reference to 
 
 [Implementation specifications](Features/PostCategories.md)  
 
+[Learning goals](LearningGoals/PostCategories.md)  
+
 ### Adding Tags to Posts [database, backend, frontend]  
 Jim heard from a friend, who works in SEO, that tags are very handy, so he wants to have them on his blog too.  
+
 Tom suggests creating a new table for the Tags and creating a relationship table with the Post table.  
 
 [Implementation specifications](Features/PostTags.md)  
+
+[Learning goals](LearningGoals/PostTags.md)  
 
 ### Adding the Author to Posts [database, backend, frontend]  
 Jim would like to involve other friends to write the blog posts, so he needs to indicate in the posts who is the author. At the moment he does not think it is necessary to create the Authors entity, it will be enough to indicate the author.  
