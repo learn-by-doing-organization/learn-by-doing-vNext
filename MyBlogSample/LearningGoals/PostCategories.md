@@ -6,13 +6,12 @@ The exercises of this unit allow you to hone your Fullstack skills, as they make
 
 ### Technologies used
 - SQL for creating and altering tables and querying data
-- familiarize yourself with the *Three layers* architecture: DAL (repository), BL (Services) and Presentation (MVC - Model View Controller)  
-- dotnet core  
-    - Interfaces, classes and Dependency injection  
-    - One-to-many relationship management (one category - many posts)  
-    - Dapper as a connection system with the database  
-    - NUnit to manage tests  
+- MVC (Model-View-Controller), *Three layers* architecture. due to working with: DAL (repository), BL (Services) and Presentation
+- Dotnet core  
+    - Interfaces, classes and Dependency injection                                   
+    - One-to-many relationship management (one category - many posts)                  
+    - Dapper as a connection system with the database                               
+    - NUnit to manage tests                                                          
     - MVC Controller, Model and View management  
     - Razor for Views  
-
-
+                                                  
