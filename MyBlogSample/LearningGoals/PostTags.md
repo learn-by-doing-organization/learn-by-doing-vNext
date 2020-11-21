@@ -1,4 +1,4 @@
-# My Blog Sample - Obbiettivi di apprendimento  
+# My Blog Sample - Learning goals 
 ([Italian translate](PostTags_IT.md))  
 
 ## Adding Tags to Posts [database, backend, frontend]  

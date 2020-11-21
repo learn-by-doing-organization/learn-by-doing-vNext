@@ -34,15 +34,17 @@ Tommaso suggerisce di creare una nuova tabella per i Tag e di creare una tabella
 
 ### Aggiungere l'autore ai Post [database, backend, frontend]  
 Giacomo vorrebbe coinvoltere altri amici per redarre i post del blog, per questo ha bisogno di indicare nei post chi è l'autore. Al momento non pensa sia necessario creare l'entità Autori, basterà solo indicare l'autore.  
+Inoltre avrebbe piacere che si possa avere una lista dei post di uno specifico autore.  
 
-Tommaso suggerisce di aggiungere un campo Autore nella tabella dei Post.  
+Tommaso suggerisce di aggiungere un campo Autore nella tabella dei Post e di passare un parametro in querystring per filtrare la lista dei post.  
 
 [Specifiche implementative](Features/PostAuthor_IT.md)  
 
 ### Aggiungere la paginazione alla lista dei Post [backend, frontend]  
-Giacomo sa già che il blog sarà ricco di post e non vuole che siano tutti visibili nella prima pagina.  
+Giacomo vorrebbe coinvoltere altri amici per redarre i post del blog, per questo ha bisogno di indicare nei post chi è l'autore. Al momento non pensa sia necessario creare l'entità Autori, basterà solo indicare l'autore.  
+Inoltre avrebbe piacere che si possa avere una lista dei post di uno specifico autore.  
 
-Tommaso suggerisce di inserire la paginazione alla action *Index* del controller *HomeController* che permetta di visualizzare solo 3 post alla volta.  
+Tommaso suggerisce di aggiungere un campo Autore nella tabella dei Post e di passare un parametro in querystring per filtrare la lista dei post.  
 
 [Specifiche implementative](Features/PostPagination_IT.md)  
 

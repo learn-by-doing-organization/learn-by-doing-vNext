@@ -1,4 +1,4 @@
-# My Blog Sample - Obbiettivi di apprendimento  
+# My Blog Sample - Learning goals  
 ([Italian translate](PostCategories_IT.md))  
 
 ## Add categories to Posts [database, backend, frontend]  
