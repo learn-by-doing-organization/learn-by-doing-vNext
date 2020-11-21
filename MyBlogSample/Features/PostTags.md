@@ -14,7 +14,7 @@ Tom suggests creating a new table for the Tags and creating a relationship table
   * Description * [string],  
   * CreateDate * [datetime] 
   
-- Create a table called *Tags* with the following columns:  
+- Create a table called *PostTags* with the following columns:  
   * PostId  * [int, primary key], 
   * TagId  * [int, primary key], 
 
