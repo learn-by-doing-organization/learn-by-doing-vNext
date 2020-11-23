@@ -75,6 +75,52 @@ db.Insert<PostTag>(mockPostTags);
 ``` 
 ###### Be careful, the test project doesn't compile because there are no class in DAL Project. It's ok, in TDD practice you write before the test and then you write code for use it. 
 
+##### DAL Project 
+- Modify *PostsRepository.cs* class in the */Repositories* folder and retrieve all tags of post in the property: 
+```csharp
+public List<Tag> Tags  { get; set; }
+```  
+- Add *TagsRepository.cs* class in */Repositories* folder, use *PostsRepository.cs* class as trace, copy the code and adapt it, but remember to retrieve all posts of the tag in the property:  
+```csharp
+public List<Post> Posts { get; set; }
+``` 
+###### Be careful, Dapper can't retrieve the priperty of type *List*, so you have to indicate all the values of Projection in query, for ex:
+```sql
+SELECT Id, Name, Description FROM Tags
+```  
+##### UnitTest BL (optional, but highly recommended)  
+- Add *TagsHelper.cs* class in */Helpers* folder, use *PostsHelper.cs* class as trace, copy the code and adapt it.
+- Add *TagsServiceTest.cs* class in */Services* folder, use *PostsServiceTest.cs* class as trace, copy the code and adapt it.
+- Add some other tests to verify retrieve the Tag of Post or the Post of Tag.
+
+##### BL Project  
+- Add the *TagsService.cs* class in the */Services* folder, use the *PostsService.cs* class as a trace, copy the code and adapt it.
+
+####  Web Project  
+- Add the *Tags* action in the *HomeController* controller, use the *Index* action as a trace, copy the code and adapt it.
+- Add the *Tag({id})* action in the *HomeController* controller, use the *Post({id})* action as a trace, copy the code and adapt it.
+- Add the *Tags* view in the *Views/Home* folder, use the *Index* view as a trace, copy the code and adapt it.
+- Add the *Tag* view in the *Views/Home* folder, use the *Post* view as a trace, copy the code and adapt it, but remember that you will also have to display the list of posts contained in the tag, for this you can see the *foreach* in the *Index* view.
+- Add a link to Categories page in *Views/Shared/_Layout.cshtml*, you can copy and past the link Home and adapt it.
+```razor
+<a href="@Url.Action("Tags", "Home")" data-rb-event-key="about" class="nav-link">Tags</a>
+``` 
+- In *Startup.cs* file, add code to handle dependency injection for the new interfaces and classes, inside the function *ConfigureServices*:  
+```csharp
+services.AddScoped<ITag, Tag>();
+services.AddScoped<IPostTag, PostTag>();
+services.AddScoped<ITagsRepository, TagsRepository>();
+services.AddScoped<ITagsService, TagsService>();
+```  
+#### Integration Test Web Project
+- Add a test like *HomeControllerTest.should_retrieve_all_posts* to verify that the tag page responds correctly.
+- Add a test like *HomeControllerTest.should_retrieve_post_by_id* to verify that the page of detail of tag responds correctly when requesting an existing id.
+- Add a test like *HomeControllerTest.should_retrieve_no_one_post* to verify that the page of detail of tag responds correctly when requesting a non-existent id.
+
+[See the repository with the implementation (!!! contains spoilers)](https://github.com/Magicianred/my-blog-sample/tree/pathFromV1toV2/step02/add-tags-to-posts)
+
+[Ritorna alla pagina principale](../README_IT.md) 
+
 
 [TO COMPLETE]  
 
