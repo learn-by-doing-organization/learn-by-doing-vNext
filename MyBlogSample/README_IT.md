@@ -50,6 +50,7 @@ Tommaso suggerisce di aggiungere un campo Autore nella tabella dei Post e di pas
 
 ### Correggere il test [backend, testing]
 Tommaso si è reso conto di aver modificato la UI del progetto Web, ma di non aver sistemato il test *should_retrieve_all_posts* del progetto *Magicianred.LearnByDoing.MyBlog.Web.Tests.Integration* che ora riporta un errore.  
+Inoltre è stato segnalato un errore nel recupero dei post per tag. Sembra che vengano recuperati sempre tutti i post, bisogna verificare e risolvere il problema.  
 
 [Specifiche implementative](Features/ErrorInTest_IT.md)  
 

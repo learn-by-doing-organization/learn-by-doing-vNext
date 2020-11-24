@@ -49,6 +49,7 @@ Tom suggests inserting pagination to the *Index* action of the *HomeController* 
 
 ### Correcting the test [backend, testing]  
 Tom realized that he changed the UI of the web project, but didn't fix the *should_retrieve_all_posts* test of the *Magicianred.LearnByDoing.MyBlog.Web.Tests.Integration* project that now it reported an error.  
+Also an error has been reported in retrieving the posts by tag. It seems that all the posts have always been recovered, we need to check and fix the problem.  
 
 [Implementation specifications](Features/ErrorInTest.md)   
 
