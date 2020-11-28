@@ -41,13 +41,13 @@ public void should_retrieve_all_posts_by_author(string author)
 
 ##### DAL Project
 
--Modify the *PostsRepository.cs* class in the */Repositories* folder updating all the present queries by inserting the recovery of Author in the SELECT
+- Modify the *PostsRepository.cs* class in the */Repositories* folder updating all the present queries by inserting the recovery of Author in the SELECT
 
 ```csharp
 SELECT Id, Title, Text, Author FROM Posts
 ```
 
--Modify the *PostsRepository.cs* class in the */Repositories* folder implementing the method of interface in the way that the query filtered by the Author property
+- Modify the *PostsRepository.cs* class in the */Repositories* folder implementing the method of interface in the way that the query filtered by the Author property
 
 ```csharp
 public IEnumerable<Post> GetAllByAuthor(string author);
