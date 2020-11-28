@@ -91,5 +91,5 @@ No intervention
 
 [See the repository with the implementation (!!! contains spoilers)](https://github.com/Magicianred/my-blog-sample/tree/pathFromV1toV2/step03/add-author-to-posts)
 
-[Ritorna alla pagina principale](../README_IT.md)
+[Return to main page](../README.md) 
 
