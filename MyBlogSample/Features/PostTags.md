@@ -40,7 +40,7 @@ public List<Tag> Tags { get; set; }
 - Add a class *Tag.cs* in the */Models* folder, use the *Post.cs* class as a trace, copy the code and adapt it.  
 - Add a class *PostTag.cs* in the */Models* folder, use the *Post.cs* class as a trace, copy the code and adapt it.  
 - Add a class *PostTagsHelper.cs* in the */Helpers* folder, use the *PostsHelper.cs* class as a trace, copy the code and adapt it.  
-- Modify class *PostTagsHelper.cs* in the */Helpers* folder, add also the following method To enhance the posts with tags:  
+- Modify class *PostsHelper.cs* in the */Helpers* folder, add also the following method To enhance the posts with tags:  
 ```csharp
 public static List<Post> GetMockDataWithTags(List<Tag> mockTags)
 {

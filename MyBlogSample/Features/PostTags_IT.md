@@ -39,7 +39,7 @@ public List<Tag> Tags { get; set; }
 - Aggiungi una classe *Tag.cs* nella cartella */Models*, usa la classe *Post.cs* come una traccia, copia il codice e adattalo  
 - Aggiungi una classe *PostTag.cs* nella cartella */Models*, usa la classe *Post.cs* come una traccia, copia il codice e adattalo  
 - Aggiungi una classe *PostTagsHelper.cs* nella cartella */Helpers*, usa la classe *PostsHelper.cs* come una traccia, copia il codice e adattalo  
-- Modifica la classe *PostTagsHelper.cs* nella cartella */Helpers* aggiungendo il seguente metodo per valorizzare i post con i tag  
+- Modifica la classe *PostsHelper.cs* nella cartella */Helpers* aggiungendo il seguente metodo per valorizzare i post con i tag  
 ```csharp
 public static List<Post> GetMockDataWithTags(List<Tag> mockTags)
 {
