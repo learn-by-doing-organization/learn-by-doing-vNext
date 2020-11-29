@@ -3,7 +3,7 @@
 
 ### Adding the Author to Posts [database, backend, frontend]
 
-Jim would like to involve other friends to write posts of blog, so he needs to indicate in the posts who is the author. At the moment he think it not is necessary to create the Authors entity, it will be enough to indicate the author.
+Jim would like to involve other friends to write posts of blog, so he needs to indicate in the posts who is the author. At the moment he think it not is necessary to create the Authors entity, it will be enough to indicate the author as string.
 Also he would like to have a list of posts from a specific author.
 
 Tom suggests inserting an Author field in the Posts table and pass a parameter in querystring to filter the list of post.
@@ -18,7 +18,7 @@ Create a new column in the Posts table called Author, which will contain a strin
 
 ##### Domain Project
 
-- Add the property *Author* in the *Ipost.cs* interface in */Interfaces/Models/Ipost.cs*, and consequently for the */Models/Post.cs* class.
+- Add the property *Author* in the *IPost.cs* interface in */Interfaces/Models/Ipost.cs*, and consequently for the */Models/Post.cs* class.
 - Modify the *IPostsRepository* interface in the */Interfaces/Repositories* folder and *IPostsService* in the */Interfaces/Services* folder adding to the both of them a new method to filter the list of post:
 
 ```csharp
@@ -27,8 +27,8 @@ public IEnumerable<Post> GetAllByAuthor(string author);
 
 ##### UnitTest DAL project (optional, but highly recommended)
 
-- Modify the method *GetDefaultMockData* in the *PostsHelper* class in */Helpers* folder adding the enhancement of the new Author property.
-- Modify the *should_retrieve_all_posts e should_retrieve_post_by_id* test by adding an *Assert* which verifies the correct enhancement of the Author property.
+- Modify the method *GetDefaultMockData* in the *PostsHelper* class in */Helpers* folder adding a value into the new property.
+- Modify the *should_retrieve_all_posts e should_retrieve_post_by_id* test by adding an *Assert* which verifies the correct value of the Author property.
 - Add a new test to verify the list of post filtered by author (*PostsRepository.GetAllByAuthor()*) giving different input parameters to the test (based on the names of the authors which you have inserted in the PostsHelper) and verify in the *Asserts* that the returned posts are actually from that author.
 
 ```csharp
@@ -55,7 +55,7 @@ public IEnumerable<Post> GetAllByAuthor(string author);
 
 ##### UnitTest BL Project (optional, but highly recommended)
 
-- Modify the *GetDefaultMockData* method of PostsHelper class in the */Helpers* folder adding the enhancement of the new Author property.
+- Modify the *GetDefaultMockData* method of PostsHelper class in the */Helpers* folder adding a value to the the new Author property.
 - Add a new test to verify the list of post filtered by author (*PostsService.GetAllByAuthor()*) giving different parameters as input to the test (based on the names of the authors you entered in the PostsHelper) and verify in the *Asserts* that the returned posts are actually of that author.
 
 ```csharp
@@ -74,12 +74,12 @@ public IEnumerable<Post> GetAllByAuthor(string author);
 
 ####  Web Project
 
-- Modify the *Index* action in *HomeController* in the way which recieve an author parameter of string-type.
+- Modify the *Index* action in *HomeController* in the way which recieve a parameter (author) of string-type.
 
 ```csharp
 public IActionResult Index(string author = null)
 ```
-and if enhanced, call the new GetAllByAuthor method of the service instead of GetAll:
+and if valued, call the new GetAllByAuthor method of the service instead of GetAll:
 
 ```csharp
 public IActionResult Index(string author = null)
