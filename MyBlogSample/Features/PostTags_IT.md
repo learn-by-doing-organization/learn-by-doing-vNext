@@ -6,7 +6,7 @@ Giacomo ha saputo da un amico che lavora nel SEO che i tag sono molto comodi, qu
 
 Tommaso suggerisce di creare una nuova tabella per i Tag e di creare una tabella di relazione con i Post.  
 
-### Specifiche implementative   
+### Specifiche implementative 
 
 #### Database
 - Crea una tabella chiamata *Tags* con le seguenti colonne:  
@@ -94,7 +94,7 @@ SELECT Id, Name, Description FROM Tags
 - Aggiungi altri test a piacere per verificare il recupero dei Tag del Post o dei Post del Tag
 
 ##### Progetto BL  
-- Aggiungi la classe *TagsService.cs* nella cartella */Services*, usa la classe *PostsService.cs* come una traccia, copia il codice e adattalo
+- Aggiungi la classe *TagsService.cs* nella cartella */Services*, usa la classe *PostsService.cs* come una traccia, copia il codice e adattalo  
 
 #### Progetto Web  
 - Aggiungi la action *Tags* nel controller *HomeController*, usa la action *Index* come una traccia, copia il codice e adattalo  
