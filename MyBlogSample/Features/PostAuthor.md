@@ -82,7 +82,7 @@ public IActionResult Index(string author = null)
 and if valued, call the new GetAllByAuthor method of the service instead of GetAll:
 
 ```csharp
-public IActionResult Index(string author = null)
+if (!String.IsNullOrWhiteSpace(author))
 ```
 
 #### Integration Test Web Project
