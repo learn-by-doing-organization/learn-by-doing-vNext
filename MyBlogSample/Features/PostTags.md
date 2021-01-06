@@ -1,14 +1,14 @@
-# My Blog Sample  
+# My Blog Sample
 ([Italian translate](PostTags_IT.md))  
 
-## Adding tags to posts [database, backend, frontend]  
+## Adding tags to posts [database, backend, frontend]
 Jim heard from a friend who works in SEO that tags are very handy, so he wants to add them to his blog too.  
 
 Tom suggests creating a new table for the Tags and creating a relationship table with the Posts.  
 
-### Implementation specifications  
+### Implementation specifications
 
-#### Database  
+#### Database
 - Create a table called *Tags* with the following columns:  
   - *Id* [int, primary key],  
   - *Name* [string],  
@@ -19,9 +19,9 @@ Tom suggests creating a new table for the Tags and creating a relationship table
   - *PostId* [int, primary key],  
   - *TagId* [int, primary key]  
 
-#### Backend  
+#### Backend
 
-##### Domain Project 
+##### Domain Project
 - Add an interface *ITag.cs* in the */Interfaces/Models* folder, use the *IPost.cs* as a trace, copy the code and adapt it, but add a property to hold the tag posts:  
 ```csharp
 public List<Post> Posts { get; set; }
@@ -36,7 +36,7 @@ public List<Tag> Tags { get; set; }
 - Add a class *Tag.cs* in the */Models* folder, use the *Post.cs* as a trace, copy the code and adapt it.  
 - Add a class *PostTag.cs* in the */Models* folder, use the *Post.cs* as a trace, copy the code and adapt it.  
 
-##### UnitTest DAL project (optional, but highly recommended)  
+##### UnitTest DAL project (optional, but highly recommended)
 - Add a class *Tag.cs* in the */Models* folder, use the *Post.cs* class as a trace, copy the code and adapt it.  
 - Add a class *PostTag.cs* in the */Models* folder, use the *Post.cs* class as a trace, copy the code and adapt it.  
 - Add a class *PostTagsHelper.cs* in the */Helpers* folder, use the *PostsHelper.cs* class as a trace, copy the code and adapt it.  
@@ -68,14 +68,14 @@ db.Insert<PostTag>(mockPostTags);
 ``` 
 - Add a class *TagsRepositoryTest.cs* in the */Repositories* folder, use the class *PostsRepositoryTest.cs* as a trace, copy the code and adopt it.  
 
-###### Be careful, in the *TagsRepositoryTest.cs* class use the *Tag * and *PostTag * class you created in this project, not the *Domain* project one. This is an exception due to the InMemory database not recognizing the table name correctly, with this *hack* you can pass the table name through the *Tag* class attribute, or in your implementation *Tag* (Tom is still working to solve this case correctly).  
+###### Be careful, in the *TagsRepositoryTest.cs* class use the *Tag * and *PostTag * class you created in this project, not the *Domain* project one. This is an exception due to the InMemory database not recognizing the table name correctly, with this *hack* you can pass the table name through the *Tag* class attribute, or in your implementation *Tag* (Tom is still working to solve this case correctly).
 
 ```csharp
 [Alias("Tags")]
 ``` 
-###### Be careful, the test project doesn't compile because there are no class in DAL Project. It's ok, in TDD practice you write before the test and then you write code for use it. 
+###### Be careful, the test project doesn't compile because there are no class in DAL Project. It's ok, in TDD practice you write before the test and then you write code for use it.
 
-##### DAL Project 
+##### DAL Project
 - Modify *PostsRepository.cs* class in the */Repositories* folder and retrieve all tags of post in the property:  
 ```csharp
 public List<Tag> Tags  { get; set; }
@@ -90,15 +90,15 @@ public List<Post> Posts { get; set; }
 SELECT Id, Name, Description FROM Tags
 ```  
 
-##### UnitTest BL (optional, but highly recommended)  
+##### UnitTest BL (optional, but highly recommended)
 - Add *TagsHelper.cs* class in */Helpers* folder, use *PostsHelper.cs* class as trace, copy the code and adapt it.  
 - Add *TagsServiceTest.cs* class in */Services* folder, use *PostsServiceTest.cs* class as trace, copy the code and adapt it.  
 - Add some other tests to verify retrieve the Tag of Post or the Post of Tag.  
 
-##### BL Project  
+##### BL Project
 - Add the *TagsService.cs* class in the */Services* folder, use the *PostsService.cs* class as a trace, copy the code and adapt it.  
 
-####  Web Project  
+####  Web Project
 - Add the *Tags* action in the *HomeController* controller, use the *Index* action as a trace, copy the code and adapt it.  
 - Add the *Tag({id})* action in the *HomeController* controller, use the *Post({id})* action as a trace, copy the code and adapt it.  
 - Add the *Tags* view in the *Views/Home* folder, use the *Index* view as a trace, copy the code and adapt it.  

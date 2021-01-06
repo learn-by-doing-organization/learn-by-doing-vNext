@@ -1,19 +1,19 @@
-# My Blog Sample  
+# My Blog Sample
 ([English translate](PostPagination.md))  
 
-## Aggiungere la paginazione alla lista dei Post [database, backend, frontend]  
+## Aggiungere la paginazione alla lista dei Post [database, backend, frontend]
 Giacomo già sa che il blog si riempirà presto di post e non vuole che siano tutti visibili nella home page in una volta sola. Vorrebbe visualizzarli in forma paginata sia sulla home che nel dettaglio della categoria e dei tag. Inoltre anche i tag e le categorie andranno paginate.    
 
 Tommaso suggerisce di aggiungere la paginazione alla action *Index* del controller *HomeController* per permettere di visualizzare solo 3 posto alla volta. Verranno passati due parametri in querystring, uno per il numero di pagina, l'altro per indicare quanti elementi visualizzare in ogni pagina. Stessa cosa per le altre action che vanno paginate.  
 
-### Specifiche implementative  
+### Specifiche implementative
 
 #### Database
 - Aggiungi altri post al database per far si che siano più di 3 e vedere la paginazione funzionare. Aggiungi per ogni nuovo post il valore della categorie e autore. Valorizza anche la tabella TagPosts di conseguenza.   
 
-#### Backend  
+#### Backend
 
-##### Progetto Domain  
+##### Progetto Domain
 - Aggiungi una classe *IPagination.cs* nella cartella */Interfaces/Models*, dovrà avere le seguenti proprietà:
     - *PageNumber* di tipo *int*  
     - *PageSize* di tipo *int*  
@@ -27,12 +27,12 @@ public IEnumerable<Post> GetPaginatedAll(int page, int pageSize);
 public List<Post> GetPaginatedAll(int page, int pageSize);
 ```
 
-##### Progetto UnitTest DAL (opzionale, ma vivamente consigliato)  
+##### Progetto UnitTest DAL (opzionale, ma vivamente consigliato)
 - Aggiungi un nuovo metodo alla classe *PostsHelper* nella cartella */Helpers* per recuperare un numero di post sufficienti a testare la paginazione (ad esempio 4, se *pageSize* è 3), usa la funzione *GetDefaultMockData* come una traccia, copia e adatta il corpo del metodo.  
 - Aggiungi un test nella classe *PostsRepositoryTest.cs* nella cartella */Repositories*, aggiungi un metodo di test *should_retrieve_all_paginated_posts*. Usa il metodo *should_retrieve_all_posts* come una traccia, copialo e adattalo per verificare il recupero dei post paginati.  
 - Aggiungi altri test a piacere per verificare il recupero dei dati paginati utilizzando diversi parametri di ingresso (numero di pagina e quanti elementi per pagina)  
 
-##### Progetto DAL  
+##### Progetto DAL
 - Modifica la classe *PostsRepository.cs* nella cartella */Repositories* e crea un metodo per implementare quello dell'interfaccia *GetPaginatedAll* creato nel progetto *Domain*. Copia ed incolla il corpo del metodo *GetAll* e adatta la query per permettere di recuperare solo gli elementi richiesti dalla paginazione.  
 
 ###### Fai attenzione! In base al database che usi dovrai utilizzare una sintassi diversa per recuperare i valori paginati.
@@ -48,12 +48,12 @@ Sql Server
 OFFSET @offset ROWS FETCH NEXT @PageSize ROWS ONLY
 ```  
 
-##### Progetto UnitTest BL (opzionale, ma vivamente consigliato)  
+##### Progetto UnitTest BL (opzionale, ma vivamente consigliato)
 - Aggiungi un nuovo metodo alla classe *PostsHelper* nella cartella */Helpers* per recuperare un numero di post sufficienti a testare la paginazione (ad esempio 4, se *pageSize* è 3), usa la funzione *GetDefaultMockData* come una traccia, copia e adatta il corpo del metodo.  
 - Aggiungi un nuovo metodo di test *should_retrieve_all_paginated_posts* nella classe *PostsServiceTest.cs* che si trova nella cartella */Services*. Il metodo dovrà verificare il corretto recupero dei post paginati.  
 - Aggiungi altri test a piacere per verificare il recupero dei dati paginati utilizzando diversi parametri di ingresso (numero di pagina e quanti elementi per pagina)  
 
-##### Progetto BL  
+##### Progetto BL
 - Modifica la classe *PostsService.cs* nella cartella */Services* e crea un metodo per implementare quello dell'interfaccia *GetPaginatedAll* creato nel progetto Domain. Copia ed incolla il corpo del metodo *GetAll* e modificalo per permettere di chiamare il giusto metodo del repository.  
 
 
@@ -100,7 +100,7 @@ ViewBag.IsLast = (posts.Count >= (int)ViewBag.PageSize);
 @await Html.PartialAsync("_PaginationPartial", "Home" , new ViewDataDictionary(ViewData) { { "ActionPath", "Index" } })
 ```
 
-#### Modifica le entità Categoria e Tag (opzionale, ma vivamente consigliato)  
+#### Modifica le entità Categoria e Tag (opzionale, ma vivamente consigliato)
 - Effettua le stesse modifiche che abbiamo fatto per i Post per le Categorie ed i Tag, così che anche questi saranno visualizzati paginati.  
 
 

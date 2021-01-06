@@ -1,4 +1,4 @@
-# My Blog Sample  
+# My Blog Sample
 ([Italian translate](PostAuthor_IT.md))  
 
 ### Adding the Author to Posts [database, backend, frontend]
