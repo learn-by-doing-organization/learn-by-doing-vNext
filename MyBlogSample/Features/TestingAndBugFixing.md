@@ -1,5 +1,5 @@
 # My Blog Sample
-([Italian translate](ErrorInTest_IT.md))  
+([Italian translate](TestingAndBugFixing_IT.md))  
 
 ### Add a Test project for the Service project [backend, testing]
 
