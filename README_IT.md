@@ -23,7 +23,7 @@ Se vuoi utilizzare i repository questi i consigli per farlo nel modo migliore:
 - Fai fork del repository del progetto scelto sul tuo account github  
 - Leggi le funzionalità proposte da implementare e inizia! Le funzionalità sono proposte con questi elementi:  
     - Una descrizione del contesto (caratterizzata da una storia verosimile)  
-    - Viene indicato fra parentesi quadre il tipo di attività che si svolgerà (database, backend e frontend - potrai scegliere di seguire solo quelle di tuo interesse e [saltare](#fare-degli-esercizi-saltando-quelli-precedenti)) quelli precedenti  
+    - Viene indicato fra parentesi quadre il tipo di attività che si svolgerà (database, backend e frontend - potrai scegliere di seguire solo quelle di tuo interesse e [saltare](#fare-degli-esercizi-saltando-quelli-precedenti) quelli precedenti)  
     - In un file separato sono indicate le *Specifiche implementative*, ti verrà indicato passo passo tutte le attività da fare per implementare la funzionalità  
         - In fondo al testo sarà presente un collegamento al branch del repository dove è stata completata la funzionalità - questo se avrai bisogno di ulteriori aiuti per superare dei problemi incontrati e per confrontare la tua soluzione con quella proposta dal creato dell'esercizio
     - In un file separato sono indicati gli *Obbiettivi di apprendimento*, ti serviranno per conoscere cosa hai imparato/esercitato.  

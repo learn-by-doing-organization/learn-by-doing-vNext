@@ -22,10 +22,10 @@ If you want to use the repositories these are the tips to do it in the best way:
 - Choose a project from the [list of projects](#list-of-projects) by reading the *Preface* and the *Instructions* in the <span>README</span>.md file of the specific project  
 - Fork the repository of choosen project to your github account  
 - Read the proposed features to implement and get started! The features are proposed with these elements:
-    - A description of the context (characterized by a credible history)
-    - The type of activity that will take place is indicated in square brackets (database, backend and frontend - you can choose to follow only those of your interest and [skip](#do-some-exercises-skipping-the-previous-ones) the previous ones
-    - In a separate file the *Implementation specifications* are indicated, you will be shown step by step all the activities to be done to implement the functionality
-        - At the bottom of the text there will be a link to the branch of the repository where the functionality was completed - this if you need further help to overcome the problems encountered and to compare your solution with the one proposed by the creation of the exercise
+    - A description of the context (characterized by a credible history)  
+    - The type of activity that will take place is indicated in square brackets (database, backend and frontend - you can choose to follow only those of your interest and [skip](#do-some-exercises-skipping-the-previous-ones the previous ones)  
+    - In a separate file the *Implementation specifications* are indicated, you will be shown step by step all the activities to be done to implement the functionality  
+        - At the bottom of the text there will be a link to the branch of the repository where the functionality was completed - this if you need further help to overcome the problems encountered and to compare your solution with the one proposed by the creation of the exercise  
     - The *Learning objectives* are indicated in a separate file, you will need them to know what you have learned/practiced.  
 
 ## List of projects
