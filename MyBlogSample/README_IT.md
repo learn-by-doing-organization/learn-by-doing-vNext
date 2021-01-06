@@ -18,7 +18,7 @@
     - [Aggiungere la paginazione alla lista dei Post [database, backend, frontend]](#aggiungere-la-paginazione-alla-lista-dei-post)
         - [Specifiche implementative](Features/PostPagination_IT.md) 
         - [Obbiettivi di apprendimento](LearningGoals/PostPagination_IT.md)  
-    - [Test finale, aggiustamento test e correzioni di bug noti [backend, frontend, testing]](#test-finale,-aggiustamento-test-e-correzioni-di-bug-noti)
+    - [Test manuali e correzioni di bug noti [backend, frontend, testing]](#test-manuali-e-correzioni-di-bug-noti)
         - [Specifiche implementative](Features/BugFixing_IT.md) 
         - [Obbiettivi di apprendimento](LearningGoals/BugFixing_IT.md)  
 - [Nice To Have (NTH)](#nice-to-have-(nth))  
@@ -80,7 +80,7 @@ Tommaso suggerisce di aggiungere la paginazione alla action *Index* del controll
 
 [Obbiettivi di apprendimento](LearningGoals/PostPagination_IT.md)  
 
-### Test finale, aggiustamento test e correzioni di bug noti
+### Test manuali e correzioni di bug noti
 *[backend, frontend, testing]*  
 Giovanni ha chiesto a Tommaso di dare un'occhiata al sito perché sembra ci siano dei problemi.  
 
