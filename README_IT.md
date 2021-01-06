@@ -29,7 +29,8 @@ Se vuoi utilizzare i repository questi i consigli per farlo nel modo migliore:
     - Una descrizione del contesto (caratterizzata da una storia verosimile)  
     - Viene indicato fra parentesi quadre il tipo di attività che si svolgerà (database, backend e frontend - potrai scegliere di seguire solo quelle di tuo interesse e [saltare](#fare-degli-esercizi-saltando-quelli-precedenti) quelli precedenti)  
     - In un file separato sono indicate le *Specifiche implementative*, ti verrà indicato passo passo tutte le attività da fare per implementare la funzionalità  
-        - In fondo al testo sarà presente un collegamento al branch del repository dove è stata completata la funzionalità - questo se avrai bisogno di ulteriori aiuti per superare dei problemi incontrati e per confrontare la tua soluzione con quella proposta dal creatore dell'esercizio
+        - In fondo al testo sarà presente un collegamento al branch del repository dove è stata completata la funzionalità - questo se avrai bisogno di ulteriori aiuti per superare dei problemi incontrati e per confrontare la tua soluzione con quella proposta dal creatore dell'esercizio  
+            - Se vuoi degli ulteriori chiarimenti o hai bisogno di altri aiuti, [segui questi passaggi](#ho-problemi-ad-eseguire-un-compito)
     - In un file separato sono indicati gli *Obbiettivi di apprendimento*, ti serviranno per conoscere cosa hai imparato/esercitato.  
 
 ## Lista dei progetti
@@ -52,7 +53,7 @@ In questo caso puoi fare un fork del repository *learn-by-doing* ed utilizzare i
 Uno dei contributi possibili è quello di fare la traduzione delle istruzioni (del progetto learn-by-doing o dei singoli progetti) nella tua lingua (o aiutare chi lo sta già facendo, [verifica nelle Issue del progetto/i se ce ne sono in corso](https://github.com/Magicianred/learn-by-doing/projects/2)).    
 
 ### Aiuta chi sta imparando
-Nel [Project di learn-by-doing](https://github.com/users/Magicianred/projects/5) colonna *Issues from Learners* trovi chi sta utilizzando *learn-by-doing* e ha bisogno di aiuto. Se hai esperienza o hai già eseguito il progetto può aiutare dando dei suggerimenti. Interagisci nel repository dell'apprendente (il fork del repository) rispondendo alla issue linkata.  
+Nel [Project di learn-by-doing](https://github.com/users/Magicianred/projects/5) colonna *Issues from Learners* trovi chi sta utilizzando *learn-by-doing* e ha bisogno di aiuto. Se hai esperienza o hai già eseguito il progetto puoi aiutare dando dei suggerimenti. Interagisci nel repository dell'apprendente (il fork del repository) rispondendo alla issue linkata.  
 
 ### Crea un progetto learn-by-doing
 Puoi contribuire realizzando un progetto da aggiungere. Se hai esperienza di programmazione puoi creare un repository con il format *learn-by-doing* per permettere ad altri di apprendere a programmare.  
@@ -66,7 +67,7 @@ Se non sei interessato a tutti i passaggi per implementare la funzionalità e vu
 
 ### Ho problemi ad eseguire un compito
 Se non riesci ad implementare un'attività, o hai bisogno di chiedere dei chiarimenti fai in questo modo:  
-- crea una issue sul tuo GitHub  
+- crea una issue sul tuo repository GitHub  
 - crea una issue sul [Project di learn-by-doing](https://github.com/users/Magicianred/projects/5) colonna *Issues from Learners* dove indichi il link alla tua issue  
 - aspetta che qualcuno risponda alla issue sul tuo GitHub
 
