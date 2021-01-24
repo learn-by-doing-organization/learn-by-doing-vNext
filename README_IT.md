@@ -8,6 +8,8 @@ Un repository contenitore di progetti dove puoi praticare ed imparare facendo.
 - [Come utilizzare learn-by-doing](#come-utilizzare-learn-by-doing)  
 - [Lista dei progetti](#lista-dei-progetti)  
     - [MyBlogSample](#MyBlogSample)  
+    - [MyBlogSample UI Moderna](#MyBlogSample-UI-moderna)  
+    - [MySimpleSiteStatistics](#MySimpleSiteStatistics)  
 - [Come contribuire al progetto learn-by-doing](#come-contribuire-al-progetto-learn-by-doing)  
     - [Traduci le istruzioni nella tua lingua](#traduci-le-istruzioni-nella-tua-lingua)  
     - [Aiuta chi sta imparando](#aiuta-chi-sta-imparando)  
@@ -41,6 +43,20 @@ Aiuta Giovanni e Tommaso a creare il loro blog personale.
 Un semplice blog in ASP<span>.</span>NET Core MVC con database (MsSQL o MySQL), test unitari e di integrazione.  
 
 [Scopri di più](MyBlogSample/README_IT.md)  
+
+### MyBlogSample UI Moderna
+Aiuta Giovanni e Tommaso a creare una moderna UI per il loro blog personale.  
+
+Realizzazione di una Moderna UI in react per il blog di Giovanni e Tommaso ([MyBlogSample](#myblogsample)).  
+
+[Scopri di più](MyBlogSample-ModernUI/react/README_IT.md)  
+
+### MySimpleSiteStatistics
+Aiuta Marco a creare un database per immagazinare le statistiche di accesso di un sito web.  
+
+Un semplice database per registrare le statistiche di accesso di un sito web attraverso *Stored procedure* e *View*.  
+
+[Scopri di più](MySimpleSiteStatistics/README_IT.md)  
 
 
 

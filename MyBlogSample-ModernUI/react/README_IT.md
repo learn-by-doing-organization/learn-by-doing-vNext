@@ -1,4 +1,4 @@
-# My Blog Sample - Versione 1
+# My Blog Sample - UI Moderna
 ([English translate](README.md))
 
 [TO DO]
