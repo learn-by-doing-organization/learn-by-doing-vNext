@@ -5,6 +5,7 @@
 
 - [Prefazione](#prefazione)  
 - [Istruzioni](#istruzioni)  
+- [Clona il repository](#clona-il-repository)
 - [Funzionalità da implementare](#funzionalità-da-implementare)  
     - [Aggiungere le categorie ai Post [database, backend, frontend]](#aggiungere-le-categorie-ai-post)
         - [Specifiche implementative](Features/PostCategories_IT.md) 
@@ -36,6 +37,13 @@ Il codice del progetto è molto strutturato, ma ha ancora poche funzionalità, �
 
 ## Istruzioni
 Di seguito troverai elencate le funzionalità che si vorranno vedere implementate nel progetto. Verrà presentata una descrizione *funzionale* che è quello che il *cliente*, nel nostro caso Tommaso e Giacomo, vogliono avere sul loro blog. Se hai una certa esperienza, o vuoi metterti in gioco, questa descrizione potrebbe già bastarti per iniziare l'attività. Al contrario se hai bisogno di un aiuto per capire cosa fare clicca sul collegamento *Specifiche implementative* e troverai dei dettagli tecnici su come procedere.  
+
+### Clona il repository
+Per iniziare clona il repository del progetto
+
+```bash
+git clone https://github.com/Magicianred/my-blog-sample.git
+```
 
 ## Funzionalità da implementare
 Le funzionalità da implementare porteranno al rilascio della versione 2.0 del progetto.  

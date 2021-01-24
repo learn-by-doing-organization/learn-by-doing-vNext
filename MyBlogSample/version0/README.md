@@ -5,6 +5,7 @@
 
 - [Preface](#preface)  
 - [Instructions](#instructions)  
+- [Clone the project](#clone-the-project)  
 - [Features to implement](#features-to-implement)  
     - [Add categories to Posts [database, backend, frontend]](#add-categories-to-posts)
         - [Implementation specifications](Features/PostCategories_IT.md) 
@@ -36,6 +37,13 @@ The code of the project is very structured, but it has few features yet. It is r
 
 ## Instructions
 Below you will find listed the features them will want to see implemented in the project. A *functional* description will be presented which is what the *customer*, in our case Tom and Jim, want to have on their blog. If you have some experience, or want to get involved, this description may already be enough for you to start the business. On the contrary, if you need help understanding what to do click on the link *Implementation specifications* and you will find technical details on how to proceed.  
+
+### Clona il repository
+First, clone the project repository
+
+```bash
+git clone https://github.com/Magicianred/my-blog-sample.git
+```
 
 ## Features to implement
 The features to be implemented will lead to the release of version 2.0 of the project.  
