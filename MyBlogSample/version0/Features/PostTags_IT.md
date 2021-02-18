@@ -101,7 +101,7 @@ SELECT Id, Name, Description FROM Tags
 - Aggiungi la action *Tag({id})* nel controller *HomeController*, usa la action *Post({id})* come una traccia, copia il codice e adattalo  
 - Aggiungi la view *Tags* nella cartella *Views/Home*, usa la view *Index* come come una traccia, copia il codice e adattalo  
 - Aggiungi la view *Tag* nella cartella *Views/Home*, usa la view *Post* come come una traccia, copia il codice e adattalo, ma ricorda che dovrai visualizzare anche la lista dei post contenuti nel tag, per questo vedi il *foreach* nella view *Index*  
-- Aggiungi un link alla pagina delle Categorie nel file *Views/Shared/_Layout.cshtml*, puoi copiare ed incollare il link alla Home e adattarlo    
+- Aggiungi un link alla pagina dei Tags nel file *Views/Shared/_Layout.cshtml*, puoi copiare ed incollare il link alla Home e adattarlo    
 ```razor
 <a href="@Url.Action("Tags", "Home")" data-rb-event-key="about" class="nav-link">Tags</a>
 ```  
