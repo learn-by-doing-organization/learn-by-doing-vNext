@@ -1,64 +1,58 @@
-# My Blog Sample  
+# My Blog Sample - Version 1
 ([Italian translate](README_IT.md))
 
-# My Blog Sample  
+## Index
 
-## Preface  
+- [Preface](#preface)  
+- [Version 0](#version-0)  
+- [Version 1](#version-1)  
+    - [Site access statistics](#site-access-statistics)  
+    - [Create admin section](#create-admin-section)  
+    - [Improve web api](#improve-web-api)  
+    - [Create modern UI](#create-modern-ui)  
+
+## Preface
 Jim and Tom are two friends that have decided to start a blog.  
-Jim is always full of ideas and involved Tom, who is a programmer always too busy, in the realization of this personal project.  
+Jim is always full of ideas and involved Tom, who is a programmer always too busy, in the realization of this personal project.   
+
+## Version 0
 
 Tom wanted to help his friend, but having little time, he left the project unfinished.  
 Jim was not discouraged, however, and with one of his ideas he found a way to carry on the project: searching on the web he found you and asked you for help for his blog. He knows that you are not an expert programmer, but with some Tom's indications about how to proceed there will be no problem!  
 
-The code of the project is very structured, but it has few features yet. It is ready for testing, but the current ones doesn't make much sense, but they are in any case an excellent basis for creating new ones.  
+The code of the project is very structured, but it has few features yet. It is ready for testing, but the current ones doesn't make much sense, but they are in any case an excellent basis for creating new ones.
 
-## Instructions
-Below you will find listed the features them will want to see implemented in the project. A *functional* description will be presented which is what the *customer*, in our case Tom and Jim, want to have on their blog. If you have some experience, or want to get involved, this description may already be enough for you to start the business. On the contrary, if you need help understanding what to do click on the link *Implementation specifications* and you will find technical details on how to proceed.  
+[Read more](version0/README.md)  
 
-## Features to implement  
-The features to be implemented will lead to the release of version 2.0 of the project.  
+## Version 1
+[Working in progress]
 
-### Add categories to Posts [database, backend, frontend]  
-Jim wants to create logical categories to collect the Posts. He would like the Posts to be linked to a category, for now he doesn't mind being able to link them to more than one category, only one is enough.  
-Tom suggests inserting a new table for the categories and adding a reference to the category in the Post table.  
+[TO TRANSLATE]
 
-[Implementation specifications](Features/PostCategories.md)  
+### Site access statistics
+*[database]*  
 
-[Learning goals](LearningGoals/PostCategories.md)  
+[TO TRANSLATE]
 
-### Adding Tags to Posts [database, backend, frontend]  
-Jim heard from a friend, who works in SEO, that tags are very handy, so he wants to have them on his blog too.  
+[Read more](version1/01_accesses/README.md)  
 
-Tom suggests creating a new table for the Tags and creating a relationship table with the Post table.  
+### Create admin section
+*[database, backend, frontend]*  
 
-[Implementation specifications](Features/PostTags.md)  
+[TO TRANSLATE]
 
-[Learning goals](LearningGoals/PostTags.md)  
+[Read more](version1/02_admin_section/README.md)  
 
-### Adding the Author to Posts [database, backend, frontend]  
-Jim would like to involve other friends to write the blog posts, so he needs to indicate in the posts who is the author. At the moment he does not think it is necessary to create the Authors entity, it will be enough to indicate the author.  
-Tom suggests adding an Author field in the Posts table.  
+### Improve web api
+*[backend]*  
 
-[Implementation specifications](Features/PostAuthor.md)  
+[TO TRANSLATE]
 
-### Add pagination to the Post list [backend, frontend]  
-Jim already knows that the blog will be full of posts and he doesn't want them all to be visible on the first page.  
-Tom suggests inserting pagination to the *Index* action of the *HomeController* controller in order to allows to show only 3 posts at a time.  
+[Read more](version1/03_web_api/README.md)  
 
-[Implementation specifications](Features/PostPagination.md)  
+### Create modern UI
+*[frontend]*  
 
-### Correcting the test [backend, testing]  
-Tom realized that he changed the UI of the web project, but didn't fix the *should_retrieve_all_posts* test of the *Magicianred.LearnByDoing.MyBlog.Web.Tests.Integration* project that now it reported an error.  
+[TO TRANSLATE]
 
-[Implementation specifications](Features/ErrorInTest.md)   
-
-## Nice To Have (NTH)  
-NTH features are not expected in the release 2.0 of the project, but will likely be implemented in version 3.0.  
-
-### A new User Interface [frontend]  
-
-[Implementation specifications](Features/NewUI.md)  
-
-### Using a modern framework for the frontend [frontend + javascript]  
-
-[Implementation specifications](Features/ClientFramework.md)  
+[Read more (react version)](version1/04_modern_ui/react/README.md)  

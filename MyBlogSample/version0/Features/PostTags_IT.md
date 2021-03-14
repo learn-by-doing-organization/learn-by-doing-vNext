@@ -1,12 +1,12 @@
-# My Blog Sample  
+# My Blog Sample
 ([English translate](PostTags.md))  
 
 ## Aggiungere i tag ai Post [database, backend, frontend]
 Giacomo ha saputo da un amico che lavora nel SEO che i tag sono molto comodi, quindi vuole aggiungerli anche lui al suo blog.  
 
-Tommaso suggerisce di creare una nuova tabella per i Tag e di creare una tabella di relazione con i Post
+Tommaso suggerisce di creare una nuova tabella per i Tag e di creare una tabella di relazione con i Post.  
 
-### Specifiche implementative   
+### Specifiche implementative
 
 #### Database
 - Crea una tabella chiamata *Tags* con le seguenti colonne:  
@@ -18,9 +18,9 @@ Tommaso suggerisce di creare una nuova tabella per i Tag e di creare una tabella
     - *PostId* [int, chiave primaria],  
     - *TagId* [int, chiave primaria]  
 
-#### Backend  
+#### Backend
 
-##### Progetto Domain  
+##### Progetto Domain
 - Aggiungi un'interfaccia *ITag.cs* nella cartella */Interfaces/Models*, usa la *IPost.cs* come una traccia, copia il codice e adattalo, ma aggiungi una proprietà per tenere i post del tag:  
 ```csharp
 public List<Post> Posts { get; set; }
@@ -35,11 +35,11 @@ public List<Tag> Tags { get; set; }
 - Aggiungere una classe *Tag.cs* nella cartella */Models*, usa la *Post.cs* come una traccia, copia il codice e adattalo  
 - Aggiungere una classe *PostTag.cs* nella cartella */Models*, usa la *Post.cs* come una traccia, copia il codice e adattalo  
 
-##### Progetto UnitTest DAL (opzionale, ma vivamente consigliato)  
+##### Progetto UnitTest DAL (opzionale, ma vivamente consigliato)
 - Aggiungi una classe *Tag.cs* nella cartella */Models*, usa la classe *Post.cs* come una traccia, copia il codice e adattalo  
 - Aggiungi una classe *PostTag.cs* nella cartella */Models*, usa la classe *Post.cs* come una traccia, copia il codice e adattalo  
 - Aggiungi una classe *PostTagsHelper.cs* nella cartella */Helpers*, usa la classe *PostsHelper.cs* come una traccia, copia il codice e adattalo  
-- Modifica la classe *PostTagsHelper.cs* nella cartella */Helpers* aggiungendo il seguente metodo per valorizzare i post con i tag  
+- Modifica la classe *PostsHelper.cs* nella cartella */Helpers* aggiungendo il seguente metodo per valorizzare i post con i tag  
 ```csharp
 public static List<Post> GetMockDataWithTags(List<Tag> mockTags)
 {
@@ -66,14 +66,14 @@ db.Insert<PostTag>(mockPostTags);
 ```
 - Aggiungi una classe *TagsRepositoryTest.cs* nella cartella */Repositories*, usa la classe *PostsRepositoryTest.cs* come una traccia, copia il codice e adattalo  
 
-###### Fai attenzione, nella classe *TagsRepositoryTest.cs* usa le classi *Tag* e *PostTag* che hai creato in questo progetto, non quelle del progetto *Domain*. Questa è un'eccezione dovuta al fatto che il database InMemory non riconosce correttamente il nome della tabella, con questo *hack* tu puoi passare il nome della tabella attraverso l'attributo della classe *Tag*, o nella tua implementazione *Tag* (Tommaso sta ancora lavorando per risolvere correttamente questa casistica).  
+###### Fai attenzione, nella classe *TagsRepositoryTest.cs* usa le classi *Tag* e *PostTag* che hai creato in questo progetto, non quelle del progetto *Domain*. Questa è un'eccezione dovuta al fatto che il database InMemory non riconosce correttamente il nome della tabella, con questo *hack* tu puoi passare il nome della tabella attraverso l'attributo della classe *Tag*, o nella tua implementazione *Tag* (Tommaso sta ancora lavorando per risolvere correttamente questa casistica).
 ```csharp
 [Alias("Tags")]
 ```
 
-###### Fai attenzione, il progetto di test non compila perché non ci sono le classi nel progetto DAL. E' giusto, nella pratica TDD tu scrivi prima il test e poi scrivi il codice per usarlo.    
+###### Fai attenzione, il progetto di test non compila perché non ci sono le classi nel progetto DAL. E' giusto, nella pratica TDD tu scrivi prima il test e poi scrivi il codice per usarlo.
 
-##### Progetto DAL  
+##### Progetto DAL
 - Modifica la classe *PostsRepository.cs* nella cartella */Repositories* e recupera tutti i tag del post nella proprietà:  
 ```csharp
 public List<Tag> Tags { get; set; }
@@ -83,25 +83,25 @@ public List<Tag> Tags { get; set; }
 public List<Post> Posts { get; set; }
 ```  
 
-###### Fai attenzione, Dapper non è in grado di recupera le proprietà di tipo *List* per cui indica tutti i valori della *Projection* nella query, per esempio:  
+###### Fai attenzione, Dapper non è in grado di recupera le proprietà di tipo *List* per cui indica tutti i valori della *Projection* nella query, per esempio:
 ```sql
 SELECT Id, Name, Description FROM Tags
 ```    
 
-##### Progetto UnitTest BL (opzionale, ma vivamente consigliato)  
+##### Progetto UnitTest BL (opzionale, ma vivamente consigliato)
 - Aggiungi la classe *TagsHelper.cs* nella cartella */Helpers*, usa la classe *PostsHelper.cs* come una traccia  
 - Aggiungi la classe *TagsServiceTest.cs* nella cartella */Services*, usa la classe *PostsServiceTest.cs* come una traccia, copia il codice e adattalo  
 - Aggiungi altri test a piacere per verificare il recupero dei Tag del Post o dei Post del Tag
 
-##### Progetto BL  
-- Aggiungi la classe *TagsService.cs* nella cartella */Services*, usa la classe *PostsService.cs* come una traccia, copia il codice e adattalo
+##### Progetto BL
+- Aggiungi la classe *TagsService.cs* nella cartella */Services*, usa la classe *PostsService.cs* come una traccia, copia il codice e adattalo  
 
-#### Progetto Web  
+#### Progetto Web
 - Aggiungi la action *Tags* nel controller *HomeController*, usa la action *Index* come una traccia, copia il codice e adattalo  
 - Aggiungi la action *Tag({id})* nel controller *HomeController*, usa la action *Post({id})* come una traccia, copia il codice e adattalo  
 - Aggiungi la view *Tags* nella cartella *Views/Home*, usa la view *Index* come come una traccia, copia il codice e adattalo  
 - Aggiungi la view *Tag* nella cartella *Views/Home*, usa la view *Post* come come una traccia, copia il codice e adattalo, ma ricorda che dovrai visualizzare anche la lista dei post contenuti nel tag, per questo vedi il *foreach* nella view *Index*  
-- Aggiungi un link alla pagina delle Categorie nel file *Views/Shared/_Layout.cshtml*, puoi copiare ed incollare il link alla Home e adattarlo    
+- Aggiungi un link alla pagina dei Tags nel file *Views/Shared/_Layout.cshtml*, puoi copiare ed incollare il link alla Home e adattarlo    
 ```razor
 <a href="@Url.Action("Tags", "Home")" data-rb-event-key="about" class="nav-link">Tags</a>
 ```  
@@ -113,7 +113,7 @@ services.AddScoped<ITagsRepository, TagsRepository>();
 services.AddScoped<ITagsService, TagsService>();
 ```  
 
-#### Progetto Integration Test Web  
+#### Progetto Integration Test Web
 - Aggiungi un test come *HomeControllerTest.should_retrieve_all_posts* per verificare che la pagina dei tag risponda correttamente  
 - Aggiungi un test come *HomeControllerTest.should_retrieve_post_by_id* per verificare che la pagina di dettaglio del tag risponda correttamente quando si richiede un id esistente  
 - Aggiungi un test come *HomeControllerTest.should_retrieve_no_one_post* per verificare che la pagina di dettaglio del tag risponda correttamente quando si richiede un id non esistente  

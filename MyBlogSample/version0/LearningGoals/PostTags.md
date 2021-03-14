@@ -1,7 +1,7 @@
-# My Blog Sample - Obbiettivi di apprendimento  
+# My Blog Sample - Learning goals
 ([Italian translate](PostTags_IT.md))  
 
-## Adding Tags to Posts [database, backend, frontend]  
+## Adding Tags to Posts [database, backend, frontend]
 The exercises of this unit allow you to hone your Fullstack skills, as they make you perform activities on the three layers of the application: database, backend and frontend. They also allow you to have an overview of the architecture and with tests allow you to make your software more robust and resilient to changes.  
 
 ### Technologies used
@@ -15,4 +15,6 @@ The exercises of this unit allow you to hone your Fullstack skills, as they make
     - MVC Controller, Model and View management  
     - Razor for Views  
 
+
+[Return to main page](../README.md)  
 

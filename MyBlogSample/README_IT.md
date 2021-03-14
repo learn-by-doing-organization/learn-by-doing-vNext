@@ -1,63 +1,76 @@
-# My Blog Sample  
+# My Blog Sample - Versione 1
+([English translate](README.md))
 
-## Prefazione  
+## Indice
+
+- [Prefazione](#prefazione)
+- [Versione 0](#versione-0)
+- [Versione 1](#versione-1) - (in corso di sviluppo)
+    - [Miglioramento UI e alcune funzionalità](#miglioramento-ui-e-alcune-funzionalità)
+    - [Creazione sezione amministrativa](#creazione-sezione-amministrativa)
+    - [Miglioramento web api](#miglioramento-web-api)
+    - [Statistiche accesso sito](#statistiche-accesso-sito)
+    - [Crezione UI moderna](#creazione-ui-moderna)
+
+## Prefazione
 Giacomo e Tommaso sono due amici che hanno deciso di fare un blog.  
-Giacomo è sempre pieno di idee e ha coinvolto Tommaso, che è un programmatore sempre troppo impegnato, nella realizzazione di questo progetto personale.  
+Giacomo è sempre pieno di idee e ha coinvolto Tommaso, che è un programmatore sempre troppo impegnato, nella realizzazione di questo progetto personale. 
+
+## Versione 0 
 
 Tommaso voleva aiutare il suo amico, ma avendo poco tempo ha lasciato a metà il progetto.  
 Giacomo non si è però scoraggiato e con una delle sue idee ha trovato il modo di portare comunque avanti il progetto: cercando in rete ti ha trovato e ti ha chiesto aiuto per il suo blog, sa che non sei un esperto programmatore, ma con alcune indicazioni di Tommaso su come procedere non ci sarà nessun problema!  
 
-Il codice del progetto è molto strutturato, ma ha ancora poche funzionalità, è predisposto per i test, ma quelli attuali non hanno molto senso, ma sono in ogni caso un'ottima base per crearne di nuovi.  
+Il codice del progetto è molto strutturato, ma ha ancora poche funzionalità, è predisposto per i test, ma quelli attuali non hanno molto senso, ma sono in ogni caso un'ottima base per crearne di nuovi. 
 
-## Istruzioni  
-Di seguito troverai elencate le funzionalità che si vorranno vedere implementate nel progetto. Verrà presentata una descrizione *funzionale* che è quello che il *cliente*, nel nostro caso Tommaso e Giacomo, vogliono avere sul loro blog. Se hai una certa esperienza, o vuoi metterti in gioco, questa descrizione potrebbe già bastarti per iniziare l'attività. Al contrario se hai bisogno di un aiuto per capire cosa fare clicca sul collegamento *Specifiche implementative* e troverai dei dettagli tecnici su come procedere.  
+[Scopri di più](version0/README_IT.md)  
 
-## Funzionalità da implementare  
-Le funzionalità da implementare porteranno al rilascio della versione 2.0 del progetto.  
+## Versione 1
+[In corso di sviluppo]
 
-### Aggiungere le categorie ai Post [database, backend, frontend]
-Giacomo vuole creare delle categorie logiche per raccogliere i Post, vorrebbe che i Post siano collegati ad una categoria, per ora non gli importa di poterli collegare a più di una categoria, ne basta una sola.  
-Tommaso suggerisce di inserire una nuova tabella per le categorie e di aggiungere nella tabella dei Post un riferimento alla categoria.  
+Tommaso è entusiasta del rilascio della versione 1 del blog ed è già pieno di idee per i prossimi sviluppi!  
 
-[Specifiche implementative](Features/PostCategories_IT.md)  
+### Miglioramento UI e alcune funzionalità
+*[backend, frontend]*  
 
-[Obbiettivi di apprendimento](LearningGoals/PostCategories_IT.md)  
+In attesa della nuova UI moderna, Giovanni vorrebbe fare alcune miglioramenti all'attuale UI e aggiungere alcune funzionalità, come la possibilità di commentare.
 
-### Aggiungere i tag ai Post [database, backend, frontend]  
-Giacomo ha saputo da un amico che lavora nel SEO che i tag sono molto comodi, quindi vuole averli anche lui nel suo blog.  
+Tommaso ha già preparato un sistema di accessi per permettere ai singoli utenti del blog di loggarsi e permettere di essere autenticati.  
 
-Tommaso suggerisce di creare una nuova tabella per i Tag e di creare una tabella di relazione con la tabella dei Post.  
+[Scopri di più](version1/01_improvement-ui/README_IT.md)  
 
-[Specifiche implementative](Features/PostTags_IT.md)  
+### Creazione sezione amministrativa
+*[database, backend, frontend]*  
 
-[Obbiettivi di apprendimento](LearningGoals/PostTags_IT.md)  
+Ora che il blog è a regime e ci sono diversi autori dei post è necessario permettere di inserire i post attraverso un'interfaccia web: una sezione amministrativa ad accesso riservato!  
 
-### Aggiungere l'autore ai Post [database, backend, frontend]  
-Giacomo vorrebbe coinvoltere altri amici per redarre i post del blog, per questo ha bisogno di indicare nei post chi è l'autore. Al momento non pensa sia necessario creare l'entità Autori, basterà solo indicare l'autore.  
+Tommaso ha già preparato un sistema di accessi per permettere ai singoli autori del blog di loggarsi e gestire i propri post, ma ha bisogno di una mano per completare il crud (create/read/update/delete) di tutte le entità. Per farlo si utilizzerà lo scaffolding di dotnet.  
 
-Tommaso suggerisce di aggiungere un campo Autore nella tabella dei Post.  
+[Scopri di più](version1/02_admin_section/README_IT.md)  
 
-[Specifiche implementative](Features/PostAuthor_IT.md)  
+### Miglioramento web api
+*[database, backend]*  
 
-### Aggiungere la paginazione alla lista dei Post [backend, frontend]  
-Giacomo sa già che il blog sarà ricco di post e non vuole che siano tutti visibili nella prima pagina.  
+Nella versione 0 del progetto era già presente una rudimentale web api, ma non veniva usata. Ora che si prevede la realizzazione di una moderna UI è fondamentale avere una web api efficiente che rispetti il modello REST.  
 
-Tommaso suggerisce di inserire la paginazione alla action *Index* del controller *HomeController* che permetta di visualizzare solo 3 post alla volta.  
+Tommaso ha già preparato un sistema di accessi per permettere agli utenti di avere una loro login e password ed ottenere un token di accesso.  
 
-[Specifiche implementative](Features/PostPagination_IT.md)  
+[Scopri di più](version1/03_web_api/README_IT.md)    
 
-### Correggere il test [backend, testing]
-Tommaso si è reso conto di aver modificato la UI del progetto Web, ma di non aver sistemato il test *should_retrieve_all_posts* del progetto *Magicianred.LearnByDoing.MyBlog.Web.Tests.Integration* che ora riporta un errore.  
+### Statistiche accesso sito
+*[database]*  
 
-[Specifiche implementative](Features/ErrorInTest_IT.md)  
+Giovanni vorrebbe avere un modo per registrare gli accessi al blog e poterli visualizzare così da sapere quante persone seguono giornalmente, settimanalmente e mensilmente il suo blog.  
 
-## Nice To Have (NTH)
-Le funzionalità NTH non sono previste nel rilascio della versione 2.0 del progetto, ma saranno probabilmente implementate nella versione 3.0.  
+Tommaso ha già pensato che saranno necessarie diverse tabelle per immagazzinare i dati, alcune stored procedure per inserirli e delle viste per facilitare la visualizzazione, ma sa che non avrà il tempo di realizzarlo. Per questo Giovanni ha consultato il suo network ed ha scoperto che Marco, un collega di Tommaso, sta realizzando un sistema per fare questo e sta seguendo gli sviluppi del suo progetto!  
 
-### Una nuova User Interface [frontend]
+[Scopri di più](../MySimpleSiteStatistics/README_IT.md)  
 
-[Specifiche implementative](Features/NewUI_IT.md)  
+### Creazione UI moderna
+*[frontend]*  
 
-### Utilizzo di un framework moderno per il frontend [frontend+javascript]
+Molti utenti si sono lamentati dell'attuale UI che è poco reattiva e molto "old-style", per questo Tommaso ha suggerito di preparare un frontend con una tecnologia più moderna che permetta di visualizzare i dati e leggere e ricercare i vari post senza dover ricaricare ogni volta tutta la pagina.
 
-[Specifiche implementative](Features/ClientFramework_IT.md)  
+Tommaso ha chiesto a colleghi ed amici se qualcuno volesse fare questa parte e ha scoperto che Veronica, una sua amica che fa frontend, può dargli una mano.  
+
+[Scopri di più (versione in React)](../MyBlogSample-ModernUI/react/README_IT.md)  
