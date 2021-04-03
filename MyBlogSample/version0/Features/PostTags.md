@@ -103,7 +103,7 @@ SELECT Id, Name, Description FROM Tags
 - Add the *Tag({id})* action in the *HomeController* controller, use the *Post({id})* action as a trace, copy the code and adapt it.  
 - Add the *Tags* view in the *Views/Home* folder, use the *Index* view as a trace, copy the code and adapt it.  
 - Add the *Tag* view in the *Views/Home* folder, use the *Post* view as a trace, copy the code and adapt it, but remember that you will also have to display the list of posts contained in the tag, for this you can see the *foreach* in the *Index* view.  
-- Add a link to Categories page in *Views/Shared/_Layout.cshtml*, you can copy and past the link Home and adapt it.  
+- Add a link to Tags page in *Views/Shared/_Layout.cshtml*, you can copy and past the link Home and adapt it.  
 ```razor
 <a href="@Url.Action("Tags", "Home")" data-rb-event-key="about" class="nav-link">Tags</a>
 ``` 
