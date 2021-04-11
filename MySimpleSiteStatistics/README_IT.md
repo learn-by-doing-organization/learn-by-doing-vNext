@@ -38,9 +38,9 @@ Per realizzare una dashboard dove visualizzare le statistiche degli accessi, si 
 
 La dashboard presenterà queste statistiche:
 - Lista delle visite per periodo di tempo (per giorno) e per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, sito web, numero visualizzazioni.
-- Lista delle visite per periodo di tempo (per giorno) e per pagina, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, pagina visualizzata, numero di visualizzazioni.
-- Lista delle visite per periodo di tempo (per giorno) e per browser, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, browser (user agent string), numero di visualizzazioni.
-- Lista delle visite per periodo di tempo (per giorno) e per utente, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, utente, numero di visualizzazioni.
+- Lista delle visite per periodo di tempo (per giorno) e per pagina, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, pagina visualizzata, sito web, numero di visualizzazioni.
+- Lista delle visite per periodo di tempo (per giorno) e per browser, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, browser (user agent string), sito web, numero di visualizzazioni.
+- Lista delle visite per periodo di tempo (per giorno) e per utente, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, utente, sito web, numero di visualizzazioni.
 
 [Specifiche implementative](Features/AddViews_IT.md)  
 
