@@ -39,13 +39,21 @@ Creare un sql script che inserisca la VIEW nel database (se hai bisogno di ulter
 
 ##### Realizzare uno o più unit test che permettano di verificare il risultato della VIEW (opzionale, ma altamente consigliato)
 
-Per validare i risultati della VIEW appena creata, realizzare uno unit test che recuperi attraverso una *JOIN* delle tabelle *accesses_visits* e *accesses_browsers* il numero di visite per un dato browser (e quindi sito web) e giorno (data senza l'ora). Usa valori statici per la data della visita ed il browser, oppure recuperali randomicamente dalle rispettive tabelle.
+Per validare i risultati della VIEW appena creata, realizzare uno unit test che recuperi attraverso una *JOIN* delle tabelle *accesses_visits* e *accesses_browsers* il numero di visite per un dato browser e giorno (data senza l'ora). Usa valori statici per la data della visita ed il browser, oppure recuperali randomicamente dalle rispettive tabelle.
 
 Creare un sql script che permetta di lanciare lo unit test (se hai bisogno di ulteriore aiuto vedi il file *tests\sp_get_or_create_access_browser\should_exists.test.sql*, per verificare che effettivamente il test funzioni, rompi la VIEW in modo che torni un risultato non corretto).
 
 #### Lista delle visite per periodo di tempo (per giorno) e per utente, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, utente, numero di visualizzazioni.
 
-[TO DO]
+Per ottenere la visualizzazione delle visite per giorno, per utente e per sito web dovremo creare una VIEW che legga i dati della tabella *accesses_visits* in *JOIN* con la *accesses_pages* (che ha la relazione con la *websites*) e la *users*, e che effettui una *GROUP BY* per il campo *date* senza tener conto dell'ora (effettuare un *CAST* con il tipo *DATE* per eliminare l'ora), per utente e per sito web, e che ritorni i valori *visit_date* (il campo *date* senza l'ora), *visit_user* (con il valore dell'id dell-utente per permettere di filtrare il risultato per utente), *visit_website* (con il valore dell'id del website per permettere di filtrare il risultato per website) e *num_visits* (che ritorna una *COUNT* delle visite per quella data).
+
+Creare un sql script che inserisca la VIEW nel database (se hai bisogno di ulteriore aiuto vedi il file *003_Create_View_CompletePages.sql*).
+
+##### Realizzare uno o più unit test che permettano di verificare il risultato della VIEW (opzionale, ma altamente consigliato)
+
+Per validare i risultati della VIEW appena creata, realizzare uno unit test che recuperi attraverso una *JOIN* delle tabelle *accesses_visits* e *users* il numero di visite per un dato utente e giorno (data senza l'ora). Usa valori statici per la data della visita ed l-utente, oppure recuperali randomicamente dalle rispettive tabelle.
+
+Creare un sql script che permetta di lanciare lo unit test (se hai bisogno di ulteriore aiuto vedi il file *tests\sp_get_or_create_access_browser\should_exists.test.sql*, per verificare che effettivamente il test funzioni, rompi la VIEW in modo che torni un risultato non corretto).
 
 
 [Vedi il repository con l'implementazione (!!!contiene spoiler)](https://github.com/Magicianred/my-simple-site-statistics-mssql/tree/pathFromV0toV1/step01/add-views)  
