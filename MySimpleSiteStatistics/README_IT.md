@@ -37,10 +37,10 @@ Le funzionalità da implementare porteranno al rilascio della versione 1.0 del p
 Per realizzare una dashboard dove visualizzare le statistiche degli accessi, si è notato che effettuare delle query semplici per ogni tabella è inefficiente e sarebbe utile creare delle VIEW che permettano di ottimizzare le prestazioni e di avere un dato più completo ad ogni richiesta.  
 
 La dashboard presenterà queste statistiche:
-- Lista delle visite per periodo di tempo (per giorno) e per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, sito web, numero visualizzazioni.
-- Lista delle visite per periodo di tempo (per giorno) e per pagina, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, pagina visualizzata, sito web, numero di visualizzazioni.
-- Lista delle visite per periodo di tempo (per giorno) e per browser, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, browser (user agent string), sito web, numero di visualizzazioni.
-- Lista delle visite per periodo di tempo (per giorno) e per utente, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, utente, sito web, numero di visualizzazioni.
+- Lista delle visite per periodo di tempo (per giorno) e per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, sito web id, sito web, numero visualizzazioni.
+- Lista delle visite per periodo di tempo (per giorno) e per pagina, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, sito web id, sito web, id della pagina, url pagina, numero di visualizzazioni.
+- Lista delle visite per periodo di tempo (per giorno) e per browser, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, browser id, browser (user agent string), sito web id, sito web, numero di visualizzazioni.
+- Lista delle visite per periodo di tempo (per giorno) e per utente, filtrate per sito web. Verranno visualizzati i seguenti dati: Periodo di riferimento, id utente, username, sito web id, sito web, numero di visualizzazioni.
 
 [Specifiche implementative](Features/AddViews_IT.md)  
 
