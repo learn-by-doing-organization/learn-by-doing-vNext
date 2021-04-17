@@ -38,10 +38,10 @@ The features to be implemented will lead to the release of version 1.0 of the pr
 To build a dashboard where to view the access statistics, it has been noticed that making simple queries for each table is inefficient and it would be useful to create VIEWs that allow you to optimize performance and have a more complete data for each request.  
 
 The dashboard will present these statistics:  
-- List of visits by time period (by day) and by website. The following data will be displayed: Reference period, website id, website name, number of views.    
-- List of visits by time period (by day) and by page, filtered by website. The following data will be displayed: Reference period, website id, website name, page id, page url, number of views.  
-- List of visits by time period (by day) and by browser, filtered by website. The following data will be displayed: Reference period, website id, website name, browser id, browser (user agent string), number of views.  
-- List of visits by time period (by day) and by user, filtered by website. The following data will be displayed: Reference period, website id, website name, user id, username, number of views.  
+- List of visits by time period (by day) and by website. The following data will be displayed: Reference period, website id, website name, website address, number of views.    
+- List of visits by time period (by day) and by page, filtered by website. The following data will be displayed: Reference period, website id, page id, page url, number of views.  
+- List of visits by time period (by day) and by browser, filtered by website. The following data will be displayed: Reference period, website id, browser id, browser (user agent string), number of views.  
+- List of visits by time period (by day) and by user, filtered by website. The following data will be displayed: Reference period, website id, user id, username, number of views.  
 
 [Implementation specifications](Features/AddViews.md)  
 
