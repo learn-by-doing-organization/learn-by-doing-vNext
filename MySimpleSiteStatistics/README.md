@@ -12,16 +12,16 @@
   
 ## Preface
 
-Mark is developping a system for registrartion of the accesses to websites.  
+Mark is developping a system for registration of the accesses to websites.  
 To implement that he created several tables to store data, some stored procedure to insert them and the views for facilitate of visualization.  
 
-Jacob, a colleague of Tom, who is interested to the project, asked a for a series of features for adding to the project to implement it in its own blog and finally having a way to find out how many accesses receives its own site.  
+Jim, a colleague of Tom, who is interested to the project, asked a for a series of features for adding to the project to implement it in its own blog and finally having a way to find out how many accesses receives its own site.  
 
-Mark who given the unexpected feature request, needs help. Jacob suggested your name and now Mark asked you to implement some of the features.    
+Mark who given the unexpected feature request, needs help. Jim suggested your name and now Mark asked you to implement some of the features.    
 
 ## Instructions
 
-Below you will find lisetd the features that will be implemented in the project. It will be presented a *functional* description which is what the *customer*, in our case Jacob, wants to have it on his blog. If you have some experience, or you want get involved, this description may be enough for you to start asset. On the contrary if you need help figuring out what to do, click on the link *Implementation specifications* and you will find the technical details on how to proceed.  
+Below you will find listed the features that will be implemented in the project. It will be presented a *functional* description which is what the *customer*, in our case Jacob, wants to have it on his blog. If you have some experience, or you want get involved, this description may be enough for you to start asset. On the contrary if you need help figuring out what to do, click on the link *Implementation specifications* and you will find the technical details on how to proceed.  
 
 ## Clone the repository
 
@@ -38,10 +38,10 @@ The features to be implemented will lead to the release of version 1.0 of the pr
 To build a dashboard where to view the access statistics, it has been noticed that making simple queries for each table is inefficient and it would be useful to create VIEWs that allow you to optimize performance and have a more complete data for each request.  
 
 The dashboard will present these statistics:  
-- List of visits by time period (by day) and by website. The following data will be displayed: Reference period, website, number of views.    
-- List of visits by time period (by day) and by page, filtered by website. The following data will be displayed: Reference period, page viewed, number of views.  
-- List of visits by time period (by day) and by browser, filtered by website. The following data will be displayed: Reference period, browser (user agent string), number of views.  
-- List of visits by time period (by day) and by user, filtered by website. The following data will be displayed: Reference period, user, number of views.  
+- List of visits by time period (by day) and by website. The following data will be displayed: Reference period, website id, website name, number of views.    
+- List of visits by time period (by day) and by page, filtered by website. The following data will be displayed: Reference period, website id, website name, page id, page url, number of views.  
+- List of visits by time period (by day) and by browser, filtered by website. The following data will be displayed: Reference period, website id, website name, browser id, browser (user agent string), number of views.  
+- List of visits by time period (by day) and by user, filtered by website. The following data will be displayed: Reference period, website id, website name, user id, username, number of views.  
 
 [Implementation specifications](Features/AddViews.md)  
 
