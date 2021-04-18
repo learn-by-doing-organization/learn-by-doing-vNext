@@ -2,7 +2,7 @@
 ([English translate](AddViews.md))  
 
 ## Aggiungere altre view di visualizzazione dati
-*[database]*  
+*[database, unit test]*  
 Per realizzare una dashboard dove visualizzare le statistiche degli accessi, si è notato che effettuare delle query semplici per ogni tabella è inefficiente e sarebbe utile creare delle VIEW che permettano di ottimizzare le prestazioni e di avere un dato più completo ad ogni richiesta.  
 
 ### Specifiche implementative
