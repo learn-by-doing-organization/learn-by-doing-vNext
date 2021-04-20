@@ -1,6 +1,10 @@
 # learn-by-doing
 ([Italian translate](README_IT.md))  
 
+## About this document
+This document is a traduction of Italian README, for updated information always check the Italian files linked above. Thanks
+(If you want, read the [translation tracker issues](https://github.com/Magicianred/learn-by-doing/projects/2) for help to keep the info up-to-date. Thank so much)
+
 A container repository of projects where you can practice and learn by doing  
 ## Index
 - [Description](#description)  
