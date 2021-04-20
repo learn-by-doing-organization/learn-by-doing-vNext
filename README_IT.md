@@ -58,7 +58,21 @@ Un semplice database per registrare le statistiche di accesso di un sito web att
 
 [Scopri di più](MySimpleSiteStatistics/README_IT.md)  
 
+## Contributori
 
+Lista di tutti i contributori (in ordine alfabetico):
+- [g-grandis](https://github.com/g-grandis)
+- [magicianred](https://github.com/Magicianred)
+- [marzieh1980](https://github.com/marzieh1980)
+ 
+## Contribuire
+
+Questo progetto è per aiutare gli individui e le organizzazioni ad "imparare facendo" (learn by doing). Se vuoi contribuire, le pull request sono sempre benvenute.
+
+**Alcuni file con informazioni base per contribuire ai repository di Magicianred**
+
+- [CODE OF CONDUCT](https://github.com/Magicianred/.github/blob/main/CODE_OF_CONDUCT.md) 
+- [CONTRIBUTING](https://github.com/Magicianred/.github/blob/main/CONTRIBUTING.md)
 
 ## Come contribuire al progetto learn-by-doing
 Il progetto _learn-by-doing_ è pensato soprattutto per chi vuole imparare a programmare e vuole "applicare sul campo" le conoscenze che ha già come fosse in un contesto lavorativo.  
