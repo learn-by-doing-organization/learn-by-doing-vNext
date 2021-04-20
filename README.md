@@ -38,6 +38,21 @@ A simple blog in ASP<span>.</span>NET Core MVC with database (MsSQL or MySQL) an
 [Read more](MyBlogSample/README.md)  
 
 
+## Contributors
+
+List of all Contributors (in alphabetical order):
+- [g-grandis](https://github.com/g-grandis)
+- [magicianred](https://github.com/Magicianred)
+- [marzieh1980](https://github.com/marzieh1980)
+ 
+## Contribution
+
+This project is to help Individuals / organization to learn by doing. If you want to contribute, pull requests are always welcome.
+
+**Some files with basic information to start contribute to Magicianred repositories**
+
+- [CODE OF CONDUCT](https://github.com/Magicianred/.github/blob/main/CODE_OF_CONDUCT.md) 
+- [CONTRIBUTING](https://github.com/Magicianred/.github/blob/main/CONTRIBUTING.md)
 
 ## How to contribute to the learn-by-doing project
 The _learn-by-doing_ project is designed especially for those who want to learn to program and want to "apply in the field" the knowledge they already have as if they were in a working context.  
