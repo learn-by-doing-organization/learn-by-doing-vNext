@@ -1,69 +1,105 @@
 # learn-by-doing
-([Italian translate](README_IT.md))  
+([English translate](README.md))  
 
-## About this document
-This document is a traduction of Italian README, for updated information always check the Italian files linked above. Thanks
-(If you want, read the [translation tracker issues](https://github.com/Magicianred/learn-by-doing/projects/2) for help to keep the info up-to-date. Thank so much)
+Un repository contenitore di progetti dove puoi praticare ed imparare facendo.  
 
-A container repository of projects where you can practice and learn by doing  
-## Index
-- [Description](#description)  
-- [How to use learn-by-doing](#how-to-use-learn-by-doing)  
-- [List of projects](#list-of-projects)  
+## Indice
+- [Descrizione](#descrizione)  
+- [Come utilizzare learn-by-doing](#come-utilizzare-learn-by-doing)  
+- [Lista dei progetti](#lista-dei-progetti)  
     - [MyBlogSample](#MyBlogSample)  
-- [How to contribute to the learn-by-doing project](#how-to-contribute-to-the-learn-by-doing-project)   
-- [How to ...](#how-to-...)  
-    - [Do some exercises skipping the previous ones](#do-some-exercises-skipping-the-previous-ones)  
+    - [MyBlogSample UI Moderna](#MyBlogSample-UI-moderna)  
+    - [MySimpleSiteStatistics](#MySimpleSiteStatistics)  
+- [Come contribuire al progetto learn-by-doing](#come-contribuire-al-progetto-learn-by-doing)  
+    - [Traduci le istruzioni nella tua lingua](#traduci-le-istruzioni-nella-tua-lingua)  
+    - [Aiuta chi sta imparando](#aiuta-chi-sta-imparando)  
+    - [Crea un progetto learn-by-doing](#crea-un-progetto-learn-by-doing)  
+- [Come fare a...](#come-fare-a...)  
+    - [Fare degli esercizi saltando quelli precedenti](#fare-degli-esercizi-saltando-quelli-precedenti)  
+    - [Ho problemi ad eseguire un compito](#ho-problemi-ad-eseguire-un-compito)
+## Descrizione
+_Learn by Doing_ è un progetto per imparare la *programmazione web*.  
+Una serie di repositori saranno creati per incoraggiare l'"*apprendimento facendo*".  
+Di volta in volta verranno proposte attività come se fossero *vere e proprie mansioni lavorative* commissionate dai clienti.  
+Le attività saranno divise in categorie (database, frontend e backend) per permetterti di scoprire i tuoi *interessi e talenti nella programmazione*.  
 
-## Description
-_Learn by Doing_ is a project to teach *web programming*.  
-A series of repositories will be created to encourage *learning by doing*.  
-From time to time activities will be proposed as if they were *real work tasks* commissioned by customers.  
-The activities will be divided into categories (database, frontend and backend) to allow you to discover your *programming interests and talents*.  
+## Come utilizzare learn-by-doing
+Se vuoi utilizzare i repository questi i consigli per farlo nel modo migliore:  
+- Scegli un progetto dalla [lista dei progetti](#lista-dei-progetti) leggendo la *Prefazione* e le *Istruzioni* nel file <span>README</span>.md dello specifico progetto  
+- Fai fork del repository del progetto scelto sul tuo account github  
+- Leggi le funzionalità proposte da implementare e inizia! Le funzionalità sono proposte con questi elementi:  
+    - Una descrizione del contesto (caratterizzata da una storia verosimile)  
+    - Viene indicato fra parentesi quadre il tipo di attività che si svolgerà (database, backend e frontend - potrai scegliere di seguire solo quelle di tuo interesse e [saltare](#fare-degli-esercizi-saltando-quelli-precedenti) quelli precedenti)  
+    - In un file separato sono indicate le *Specifiche implementative*, ti verrà indicato passo passo tutte le attività da fare per implementare la funzionalità  
+        - In fondo al testo sarà presente un collegamento al branch del repository dove è stata completata la funzionalità - questo se avrai bisogno di ulteriori aiuti per superare dei problemi incontrati e per confrontare la tua soluzione con quella proposta dal creatore dell'esercizio  
+            - Se vuoi degli ulteriori chiarimenti o hai bisogno di altri aiuti, [segui questi passaggi](#ho-problemi-ad-eseguire-un-compito)
+    - In un file separato sono indicati gli *Obbiettivi di apprendimento*, ti serviranno per conoscere cosa hai imparato/esercitato.  
 
-## How to use learn-by-doing
-If you want to use the repositories these are the tips to do it in the best way:  
-- Choose a project from the [list of projects](#list-of-projects) by reading the *Preface* and the *Instructions* in the <span>README</span>.md file of the specific project  
-- Fork the repository of choosen project to your github account  
-- Read the proposed features to implement and get started! The features are proposed with these elements:
-    - A description of the context (characterized by a credible history)  
-    - The type of activity that will take place is indicated in square brackets (database, backend and frontend - you can choose to follow only those of your interest and [skip](#do-some-exercises-skipping-the-previous-ones the previous ones)  
-    - In a separate file the *Implementation specifications* are indicated, you will be shown step by step all the activities to be done to implement the functionality  
-        - At the bottom of the text there will be a link to the branch of the repository where the functionality was completed - this if you need further help to overcome the problems encountered and to compare your solution with the one proposed by the creation of the exercise  
-    - The *Learning objectives* are indicated in a separate file, you will need them to know what you have learned/practiced.  
+## Lista dei progetti
 
-## List of projects
+### MyBlogSample
+Aiuta Giovanni e Tommaso a creare il loro blog personale.  
 
-### MyBlogSample  
-Help Jim and Tom to create your personal blog.  
+Un semplice blog in ASP<span>.</span>NET Core MVC con database (MsSQL o MySQL), test unitari e di integrazione.  
 
-A simple blog in ASP<span>.</span>NET Core MVC with database (MsSQL or MySQL) and unit and integration tests.  
+[Scopri di più](MyBlogSample/README_IT.md)  
 
-[Read more](MyBlogSample/README.md)  
+### MyBlogSample UI Moderna
+Aiuta Giovanni e Tommaso a creare una moderna UI per il loro blog personale.  
 
+Realizzazione di una Moderna UI in react per il blog di Giovanni e Tommaso ([MyBlogSample](#myblogsample)).  
 
-## Contributors
+[Scopri di più](MyBlogSample-ModernUI/README.md)  
 
-List of all Contributors (in alphabetical order):
+### MySimpleSiteStatistics
+Aiuta Marco a creare un database per immagazinare le statistiche di accesso di un sito web.  
+
+Un semplice database per registrare le statistiche di accesso di un sito web attraverso *Stored procedure* e *View*.  
+
+[Scopri di più](MySimpleSiteStatistics/README_IT.md)  
+
+## Contributori
+
+Lista di tutti i contributori (in ordine alfabetico):
 - [g-grandis](https://github.com/g-grandis)
 - [magicianred](https://github.com/Magicianred)
 - [marzieh1980](https://github.com/marzieh1980)
  
-## Contribution
+## Contribuire
 
-This project is to help Individuals / organization to learn by doing. If you want to contribute, pull requests are always welcome.
+Questo progetto è per aiutare gli individui e le organizzazioni ad "imparare facendo" (learn by doing). Se vuoi contribuire, le pull request sono sempre benvenute.
 
-**Some files with basic information to start contribute to Magicianred repositories**
+**Alcuni file con informazioni base per contribuire ai repository di Magicianred**
 
 - [CODE OF CONDUCT](https://github.com/Magicianred/.github/blob/main/CODE_OF_CONDUCT.md) 
 - [CONTRIBUTING](https://github.com/Magicianred/.github/blob/main/CONTRIBUTING.md)
 
-## How to contribute to the learn-by-doing project
-The _learn-by-doing_ project is designed especially for those who want to learn to program and want to "apply in the field" the knowledge they already have as if they were in a working context.  
-It can also be used by those who already have experience as a *format* for learning and exercising others.  
-In this case you can fork the *learn-by-doing* repository and use existing projects (or create new ones) and thus make this possibility available to others.  
+## Come contribuire al progetto learn-by-doing
+Il progetto _learn-by-doing_ è pensato soprattutto per chi vuole imparare a programmare e vuole "applicare sul campo" le conoscenze che ha già come fosse in un contesto lavorativo.  
+Può essere usato anche da chi ha già esperienza come un *format* per imparare e far esercitare altri.  
+In questo caso puoi fare un fork del repository *learn-by-doing* ed utilizzare i progetti già presenti (o crearne di nuovi) e rendere così disponibile ad altri questa possibilità.  
 
-## How to ...
+### Traduci le istruzioni nella tua lingua
+Uno dei contributi possibili è quello di fare la traduzione delle istruzioni (del progetto learn-by-doing o dei singoli progetti) nella tua lingua (o aiutare chi lo sta già facendo, [verifica nelle Issue del progetto/i se ce ne sono in corso](https://github.com/Magicianred/learn-by-doing/projects/2)).    
 
-### Do some exercises skipping the previous ones
-If you are not interested in all the steps to implement the functionality and you want to practice only a certain activity of the exercise (for example only the frontend) and you do not want or cannot carry out the previous exercises (which however are prerequisites) you can access the branch with the exercise performed and download the previous commit to the one you want to accomplish.
+### Aiuta chi sta imparando
+Nel [Project di learn-by-doing](https://github.com/users/Magicianred/projects/5) colonna *Issues from Learners* trovi chi sta utilizzando *learn-by-doing* e ha bisogno di aiuto. Se hai esperienza o hai già eseguito il progetto puoi aiutare dando dei suggerimenti. Interagisci nel repository dell'apprendente (il fork del repository) rispondendo alla issue linkata.  
+
+### Crea un progetto learn-by-doing
+Puoi contribuire realizzando un progetto da aggiungere. Se hai esperienza di programmazione puoi creare un repository con il format *learn-by-doing* per permettere ad altri di apprendere a programmare.  
+
+Un esempio? Converti il progetto *MyBlogSample* nel tuo linguaggio di programmazione preferito (ad esempio a me piacerebbe tanto seguirne uno in Java Spring o Go).  
+
+## Come fare a...
+
+### Fare degli esercizi saltando quelli precedenti
+Se non sei interessato a tutti i passaggi per implementare la funzionalità e vuoi praticare solo una certa attività dell'esercizio (ad esempio solo il frontend) e non vuoi o non puoi svolgere gli esercizi precedenti (che però sono prerequisiti) potrai accedere al branch con l'esercizio svolto e scaricare il commit precedente a quello che vuoi realizzare.  
+
+### Ho problemi ad eseguire un compito
+Se non riesci ad implementare un'attività, o hai bisogno di chiedere dei chiarimenti fai in questo modo:  
+- crea una issue sul tuo repository GitHub  
+- crea una issue sul [Project di learn-by-doing](https://github.com/users/Magicianred/projects/5) colonna *Issues from Learners* dove indichi il link alla tua issue  
+- aspetta che qualcuno risponda alla issue sul tuo GitHub
+
+In questo modo potrai anche praticare l'uso delle issue su GitHub apprendendo come gestire i progetti attraverso gli strumenti di github.  
+
