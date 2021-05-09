@@ -97,6 +97,8 @@ npm run docs
 
 [TO DO]
 
+[Vedi il repository con l'implementazione (!!!contiene spoiler)](https://github.com/learn-by-doing-organization/modern-ui-react-my-blog-sample/tree/pathFromV0toV1/step01%2Fadd-category-to-posts)  
+
 
 [Ritorna alla pagina principale](../../README.md)  
 
