@@ -53,6 +53,10 @@ Le funzionalità da implementare porteranno al rilascio della versione 1.0 del p
 *[frontend]*  
 Nel blog i post sono raggruppati per categorie logiche. Giacomo vorrebbe avere una pagina con l'elenco delle categorie e accedendo alla categoria siano visualizzati i Post siano contenuti all'interno della categoria. Inoltre nel dettaglio di ogni post venga visualizzata la categoria di appartenenza. Ci può essere solo una categoria per post.  
 
+Tommaso suggerisce di modificare i dummy data dei post aggiungendo una proprietà "categoria" che contiene un oggetto con le proprietà "id" e "name".  
+
+Inoltre suggerisce di aggiungere un nuovo file per gestire i dummy data delle categorie. Deve essere come quello per i post, ma deve trattare un oggetto che rappresenti la categoria con le proprietà id, name, description e un array con degli oggetti post.  
+
 [Specifiche implementative React](react/Features/PostCategories.md)  
 [Specifiche implementative React + Redux](react/Features/PostCategories-Redux.md)  
 
